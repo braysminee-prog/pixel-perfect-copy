@@ -34,7 +34,11 @@ export function OrphicWorlds() {
             key={world.name}
             type="button"
             className={`group relative aspect-[3/4] w-[68vw] shrink-0 snap-start overflow-hidden rounded-2xl text-left sm:w-[46vw] md:aspect-auto md:w-auto ${
-              index === 0 ? "md:col-span-2 md:row-span-2 md:min-h-[30rem]" : "md:min-h-[14.5rem]"
+              index === 0
+                ? "md:col-span-2 md:row-span-2 md:min-h-[30rem]"
+                : index === worlds.length - 1
+                  ? "md:col-span-2 md:min-h-[14.5rem]"
+                  : "md:min-h-[14.5rem]"
             }`}
           >
             <img
