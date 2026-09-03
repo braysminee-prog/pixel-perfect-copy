@@ -19,7 +19,7 @@ export function OrphicLive() {
     return () => window.clearInterval(id);
   }, []);
 
-  const activity = activities[index];
+  const activity = activities[index] ?? activities[0]!;
 
   return (
     <section className="py-20 md:py-28">
