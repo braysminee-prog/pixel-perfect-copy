@@ -12,7 +12,7 @@ export function BottomNav() {
   return (
     <nav
       aria-label="Navigasi utama"
-      className="fixed inset-x-0 bottom-0 z-40 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] md:px-0 md:pb-6"
+      className="fixed inset-x-0 bottom-0 z-40 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] md:hidden"
     >
       <div className="mx-auto flex max-w-md items-center justify-between rounded-full orphic-glass px-2 py-2">
         {items.map(({ label, icon: Icon, active }) => (
