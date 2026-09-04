@@ -1,4 +1,5 @@
-import { Bell, Menu, ShoppingBag } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import { Bell, Menu, Search, ShoppingBag } from "lucide-react";
 
 export function TopBar() {
   return (
@@ -17,6 +18,13 @@ export function TopBar() {
         </span>
 
         <div className="flex items-center gap-2">
+          <Link
+            to="/search"
+            aria-label="Cari di Orphic"
+            className="flex size-10 items-center justify-center rounded-full orphic-glass text-foreground/85 transition-colors duration-300 hover:text-foreground"
+          >
+            <Search className="size-[18px]" strokeWidth={1.5} />
+          </Link>
           <button
             type="button"
             aria-label="Keranjang"
